@@ -70,12 +70,12 @@ $(function (){
         owl.trigger('destroy.owl.carousel');
         owl.addClass('off');
     }
-    let userLang = navigator.language || navigator.userLanguage;
 
-    let options = $.extend({}, $.datepicker.regional['ru'], {dateFormat: "mm/dd/yy"});
-
-    $( "#datepicker" ).datepicker(options);
-
+    if ( $(window).width() < 601 ) {
+        stopCarousel();
+    } else {
+        startCarousel();
+    }
 
     $(window).resize(function() {
         if ( $(window).width() < 601 ) {
@@ -84,7 +84,11 @@ $(function (){
             startCarousel();
         }
     });
-   $('.menu-btn').on('click',function (){
+    let options = $.extend({}, $.datepicker.regional['ru'], {dateFormat: "mm/dd/yy"});
+
+    $( "#datepicker" ).datepicker(options);
+
+    $('.menu-btn').on('click',function (){
        $('.mobile-header').addClass('opened')
        $('.mobile-menu-list').addClass('opened')
        $('.mobile-search').addClass('opened')

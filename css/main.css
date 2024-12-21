@@ -845,6 +845,10 @@ footer{
     right: 15px;
 
 }
+::placeholder {
+    color: #284A74;
+    opacity: 1; /* Firefox */
+}
 .footer-top .search::placeholder {
     color: white;
     opacity: 1; /* Firefox */
@@ -1010,4 +1014,49 @@ footer{
 }
 .mob-calendar{
     display: none;
+}
+.btn-user{
+    width: 40px;
+    height: 40px;
+    border: 1px solid #0068F8;
+    border-radius: 100%;
+    background: url('../img/user-blue.svg') no-repeat center center;
+    background-size: 15px 14px;
+    position: relative;
+}
+.btn-user:after{
+    content: '';
+    width: 12px;
+    height: 12px;
+    border-radius: 100%;
+    background: #0068F8;
+    position: absolute;
+}
+header .user-authorised{
+    gap: 18px;
+}
+header .user-authorised h4{
+    font-size: 14px;
+    font-family: "TTFirs-ExtraBold", sans-serif;
+}
+.breadcrumbs{
+    margin-bottom: 10px;
+}
+.breadcrumb-link{
+    font-size: 14px;
+    color: #284A74;
+    line-height: 16px;
+    padding-right: 20px;
+    position: relative;
+}
+.breadcrumb-item{
+    font-size: 14px;
+    color: #284A74;
+    line-height: 16px;
+}
+.breadcrumb-link:after{
+    content: "/";
+    position: absolute;
+    right: 8px;
+    bottom: 0;
 }
