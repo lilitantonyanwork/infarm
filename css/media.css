@@ -413,7 +413,11 @@
     }
     .speaker{
         padding: 18px 18px 25px;
+        display: none;
     }
+   .speaker:nth-child(-n+6) {
+       display: flex;
+   }
     footer{
         margin-top: 57px;
     }
@@ -769,6 +773,11 @@
     .news-item{
         padding-left: 0;
         padding-right: 0;
+        display: none;
+    }
+    .news-item:first-child, .news-item:nth-child(2),
+    .news-item:nth-child(3){
+        display: block;
     }
     .banner-left .view{
         font-size: 12px;
