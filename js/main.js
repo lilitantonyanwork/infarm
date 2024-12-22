@@ -63,6 +63,12 @@ $(function (){
             items: 1,
             dots:true,
         });
+        $('.vebinar-speakers').owlCarousel({
+            loop:true,
+            items: 1,
+            dots:true,
+            nav:true,
+        });
 
     }
     function stopCarousel() {
@@ -100,4 +106,12 @@ $(function (){
         $('.mobile-search').removeClass('opened')
 
     })
+    $('.category-select').on('click', function (){
+        $('.category').toggleClass('opened')
+    })
+    $('.select-item .closed').on('click', function (){
+        $(this).siblings('.category-sub-select').toggleClass('opened')
+        $(this).toggleClass('opened');
+    })
+
 })
