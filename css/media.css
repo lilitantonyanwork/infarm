@@ -64,8 +64,169 @@
         -webkit-box-orient: vertical;
         overflow: hidden;
     }
+    .event-tags{
+        padding-right: 171px;
+        margin-top: 40px;
+        margin-bottom: 45px;
+    }
+    .vebinars .events{
+        margin-bottom: 0;
+    }
+    .event-text p{
+        margin-bottom: 58px;
+    }
+    .vebinars .event-count{
+        margin-bottom: 21px;
+    }
+    .vebinars footer{
+        margin-top: 47px;
+    }
+    .vebinar-inner .event-count{
+        margin-bottom: 16px;
+    }
+    .vebinar-right{
+        width: 588px;
+        max-height: 449px;
+        margin-bottom: 53px;
+        padding-top: 42px;
+        padding-left: 38px;
+        padding-right: 42px;
+        padding-bottom: 33px;
+    }
+    .vebinar-video{
+        max-height: 449px;
+        overflow: hidden;
+        border-radius: 32px;
+    }
+    .vebinar-section{
+       gap: 36px;
+        padding-right: 19px;
+
+    }
+    .video-info .event-tags{
+        margin-top: 19px;
+    }
+    .vebinar-video img{
+        height: 100%;
+        object-fit: cover;
+    }
+    .vebinar{
+        gap: 27px;
+    }
+    .vebinar-left {
+        width: calc(100% - 615px);
+    }
+    .speaker-title{
+        padding-left: 13px;
+    }
+    .speaker-info{
+        gap: 42px;
+        padding-left: 11px;
+
+    }
+    .vebinar-right .filter-tag{
+        margin-left: 11px;
+    }
+    .vebinar-count{
+        margin-left: 11px;
+    }
+    .vebinar-right .owl-dots{
+        padding-left: 11px;
+    }
+    .speakers-bottom{
+        padding-top: 13px;
+    }
+    .vebinar-right .owl-carousel .owl-nav .owl-next{
+        margin: 0;
+        bottom: -50px;
+    }
+    .vebinar-text h2{
+        margin-bottom: 29px;
+    }
+    .vebinar-text p{
+        margin-bottom: 18px;
+    }
+
+    .vebinar-test{
+        padding: 41px 43px 38px;
+    }
+    .test-duration{
+        margin-bottom: 38px;
+    }
+    .vebinar-test label{
+        gap: 13px;
+    }
+    .btn-gray{
+        margin-top: 34px;
+    }
+    .stenogramma h2{
+        margin-bottom: 29px;
+    }
 }
 
+@media screen and (max-width: 1480px) {
+    .speaker-inner-list .speaker {
+        width: calc(100% / 5 - 18px);
+    }
+    .speaker-inner-list {
+        gap: 20px 18px;
+    }
+    .breadcrumbs {
+        margin-bottom: 10px;
+    }
+    .event-search{
+        margin-right: 35px;
+    }
+    .event-search .search{
+        width: 342px;
+    }
+    .category{
+        width: 264px;
+        margin-right: 12px;
+    }
+    .category.opened .category-list{
+        width: 264px;
+    }
+    .vebinars     .event-left {
+        gap: 16px;
+    }
+    .vebinars .event-item{
+        width: calc(100% / 3 - 11px);
+    }
+    .event-tags{
+        padding-right: 80px;
+    }
+    .event-tags{
+        padding-left: 12px;
+        margin-bottom: 50px;
+    }
+    .event-tags .filter-tag{
+        display: none;
+    }
+    .event-tags .filter-tag:nth-child(-n + 15){
+        display: flex;
+    }
+    .text-collapse{
+        display: inline-block;
+        color: #0068F8;
+        font-size: 14px;
+        line-height: 16px;
+        font-family: "TTFirs-Bold", sans-serif;
+        margin-left: 5px;
+    }
+    .event-text p{
+        padding-right: 20px;
+        margin-bottom: 52px;
+    }
+    .vebinars .event-count {
+        margin-bottom: 27px;
+    }
+    .vebinar-inner .event-count {
+        margin-bottom: 20px;
+    }
+
+
+}
 @media screen and (max-width: 1388px){
     section{
         padding-right: 20px;
@@ -142,6 +303,44 @@
     }
     .calendar-title{
         margin-bottom: 12px;
+    }
+    .vebinar-date{
+        margin-bottom: 15px;
+    }
+    .vebinar-right{
+        width: 421px;
+    }
+    .speaker-info img{
+        display: none!important;
+    }
+    .speaker-user img{
+        display: flex!important;
+        width: 36px!important;
+    }
+    .speaker-user{
+        gap: 10px;
+    }
+    .vebinar-left {
+        width: calc(100% - 448px);
+    }
+    .vebinar-right .owl-dots{
+        margin-top: 0;
+    }
+    .vebinar-text h2 {
+        margin-bottom: 40px;
+    }
+    .collapse{
+        margin-bottom: 46px;
+    }
+    .vebinar-list{
+        font-size: 18px;
+        display: flex;
+        white-space: nowrap;
+        align-items: center;
+        justify-content: center;
+    }
+    .vebinar-inner .events{
+        margin-bottom: 47px;
     }
 }
 @media screen and (max-width: 1200px) {
@@ -372,6 +571,83 @@
     .app-btn{
         width: 104px;
     }
+    .speaker-inner-list .speaker {
+        width: calc(100% / 5 - 15px);
+    }
+    .speaker-inner .events-sorting{
+        margin-bottom: 12px;
+    }
+    .speaker-inner .events{
+        margin-bottom: 0;
+    }
+    .speaker-inner .block-title {
+        margin-bottom: 25px;
+    }
+    .speaker-inner footer {
+        margin-top: 55px;
+    }
+    .category{
+        width: 229px;
+        margin-right: 10px;
+    }
+    .category.opened .category-list{
+        width: 221px;
+    }
+    .event-search .search {
+        width: 297px;
+        padding: 10px 15px;
+    }
+    .event-search{
+        margin-right: 30px;
+    }
+    .event-types{
+        gap: 12px;
+    }
+    .events-sorting {
+        margin-bottom: 20px;
+    }
+    .vebinars .event-count {
+        margin-bottom: 17px;
+    }
+    .vebinars .events-content{
+        gap: 28px;
+    }
+    .vebinars .event-left {
+        gap: 19px;
+    }
+    .vebinars .event-item {
+        width: calc(100% / 3 - 13px);
+    }
+    .vebinars    .item-content h2 {
+        -webkit-line-clamp: 4;
+    }
+    .vebinars .event-item .tag-item:first-child {
+        display: flex;
+    }
+    .vebinar-inner .event-count {
+        margin-bottom: 18px;
+    }
+    .vebinar-date{
+        margin-bottom: 35px;
+    }
+    .vebinar-right {
+        width: 489px;
+    }
+    .vebinar{
+        gap: 20px;
+    }
+    .vebinar-left {
+        width: calc(100% - 509px);
+    }
+    .vebinar-section{
+        gap: 30px;
+    }
+}
+@media screen and (max-width: 1100px){
+    .events-sorting{
+        flex-wrap: wrap;
+        gap: 22px;
+    }
 }
 @media screen and (max-width: 1024px) {
     section{
@@ -457,6 +733,100 @@
         margin-top: 14px;
         margin-bottom: 8px;
     }
+    .speaker-inner-list .speaker {
+        width: calc(100% / 4 - 15px);
+    }
+    .speaker-inner .events-sorting{
+        flex-wrap: wrap;
+        margin-bottom: 33px;
+    }
+    .speaker-inner .event-types {
+        margin-left: 0;
+        margin-top: 23px;
+    }
+    .speaker-inner .block-title{
+        margin-bottom: 14px;
+    }
+    header{
+        margin-bottom: 0;
+    }
+    .speaker-inner footer {
+        margin-top: 51px;
+    }
+    .btn-speakers-more{
+        margin-top: 30px;
+    }
+    .speaker-inner .speaker{
+        display: flex;
+    }
+     .vebinars .event-count {
+        margin-bottom: 20px;
+    }
+    .events-sorting{
+        flex-wrap: wrap;
+        gap: 22px 10px   ;
+    }
+    .category{
+        width: 245px;
+        margin-right: 0;
+    }
+    .category.opened .category-list{
+        width: 245px;
+    }
+    .event-search .search{
+        width: 100%;
+        max-width: 100%;
+
+    }
+    .event-search{
+        width: calc(100% - 255px);
+        margin-right: 0;
+    }
+    .events-sorting {
+        margin-bottom: 17px;
+    }
+    .vebinars .events-content {
+        gap: 30px;
+    }
+    .vebinars .event-left {
+        gap: 15px;
+    }
+    .vebinars .event-item {
+        width: calc(100% / 3 - 10px);
+    }
+    .event-tags{
+        margin-top: 46px;
+        margin-bottom: 42px;
+    }
+    .event-text p{
+        font-size: 18px;
+        line-height: 21px;
+        margin-bottom: 48px;
+    }
+    .event-tags{
+        padding-right: 0;
+        padding-left: 0;
+        gap: 5px;
+    }
+    .show-all{
+        margin-left: 5px;
+    }
+    .event-tags .filter-tag{
+        font-size: 12px;
+        height: 18px;
+        line-height: 14px;
+        padding: 3px 5px 0;
+        align-items: center;
+        justify-content: center;
+    }
+    .vebinar-inner .event-count {
+        margin-bottom: 19px;
+    }
+}
+@media  screen and (max-width: 990px) {
+    .speaker-inner-list .speaker {
+        width: calc(100% / 3 - 12px);
+    }
 }
 @media  screen and (max-width: 900px) {
     .header-logo{
@@ -476,6 +846,9 @@
     }
     .event-item{
         width: calc(100%/2 - 10px);
+    }
+    .vebinars .tag-item:nth-child(2){
+        display: none;
     }
 }
 @media screen and (max-width: 768px){
@@ -543,7 +916,7 @@
         padding-left: 16px;
         padding-right: 15px;
     }
-    .events, .speakers{
+    .events, .speakers, .breadcrumbs{
         padding-left: 16px;
         padding-right: 15px;
     }
@@ -598,6 +971,16 @@
     }
     .btn-login:after{
         margin: 0 auto;
+    }
+    .vebinars .event-item {
+        width: calc(100% / 2 - 8px);
+    }
+    .events-sorting{
+        display: none;
+    }
+    .event-tags, .event-text p{
+        padding-left: 16px;
+        padding-right: 15px;
     }
 }
 
@@ -857,5 +1240,79 @@
         padding-right: 15px;
         padding-top: 15px;
         padding-bottom: 15px;
+    }
+
+    .breadcrumb-link, .breadcrumb-item{
+        font-size: 11px;
+    }
+    .search{
+        font-size: 14px;
+    }
+    .breadcrumbs{
+        margin-top: 4px;
+    }
+    .category{
+        height: 37px;
+        width: 245px;
+    }
+    .category-select{
+        font-size: 14px;
+        line-height: 16px;
+    }
+    .category-select img{
+        width: 10px;
+    }
+    .letters{
+        width: 86px;
+        margin-right: 12px;
+    }
+    .category.opened .category-list{
+        width: 245px;
+    }
+    .letters.opened .category-list{
+        width: 86px;
+    }
+    .select-item{
+        font-size: 14px;
+        line-height: 16px;
+    }
+    .select-sub-item{
+        font-size: 12px;
+    }
+    .speaker-inner-list .speaker {
+        width: calc(100% / 2 - 9px);
+    }
+    .speaker-inner .event-types{
+        display: none;
+    }
+    .speaker-inner .events-sorting{
+        margin-bottom: 19px;
+    }
+    .event-text p{
+        font-size: 16px;
+        line-height: 19px;
+        margin-bottom: 40px;
+    }
+    .event-tags{
+        gap: 9px 5px;
+        margin-bottom: 29px;
+        margin-top: 48px;
+    }
+    .show-all{
+        margin-top: 3px;
+        display: flex;
+        width: 100%;
+    }
+    .event-left .btn-more{
+        height: 30px;
+        background: transparent;
+        color: #0068F8;
+        width: 76px;
+        border: 1px solid #0068F8;
+        font-size: 14px;
+        line-height: 16px;
+    }
+    .vebinars .event-item {
+        width:100%;
     }
 }

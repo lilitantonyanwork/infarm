@@ -162,7 +162,7 @@ section{
 main{
     max-height: 100vh;
     overflow: auto;
-    padding: 19px 0 8px;
+    padding: 0 0 8px;
     max-width: 1592px;
     width: 100%;
 }
@@ -171,6 +171,8 @@ main::-webkit-scrollbar {
 }
 header{
     margin-bottom: 24px;
+    height: 85px;
+    align-items: center;
 }
 .header-logo{
     margin-right: 68px;
@@ -248,12 +250,17 @@ header .user{
     width: calc(100% -  402px);
     min-height: 236px;
     padding: 28px 23px 22px 30px;
+    display: flex;
+    flex-direction: column;
 }
 .banner-left h1{
     color: #fff;
     font-size: 48px;
     font-weight: 400;
     line-height: 52px;
+}
+.banner-left >div{
+    margin-top: auto;
 }
 .banner-right{
     width: 382px;
@@ -265,14 +272,17 @@ header .user{
 .banner-left .view{
     color: #fff;
     display: flex;
-    align-items: flex-end;
+    align-items: center;
     padding-left: 24px;
     font-size: 14px;
     line-height: 16px;
     font-family: "TTFirs-Bold", sans-serif;
     background: url('../img/view.svg') no-repeat;
-    background-position: left 13px;
+    background-position: left top;
 
+}
+.news-icon img{
+    width: 29px;
 }
 .item-type{
     margin-right: 15px;
@@ -864,6 +874,10 @@ footer{
     color: #284A74;
     opacity: 1; /* Firefox */
 }
+.event-search .search::placeholder {
+    color: #8BA0B4  ;
+    opacity: 1; /* Firefox */
+}
 .footer-top .search::placeholder {
     color: white;
     opacity: 1; /* Firefox */
@@ -1202,6 +1216,7 @@ header .user-authorised h4{
     padding: 0;
     align-items: center;
     justify-content: center;
+    color: #fff;
 
 }
 .vebinar-inner .events-content{
@@ -1484,7 +1499,7 @@ header .user-authorised h4{
     margin-bottom: 24px;
     gap: 9px;
     display: flex;
-    align-items: center;
+    align-items: baseline;
 }
 .stenogramma p{
     font-size: 18px;
@@ -1501,10 +1516,84 @@ header .user-authorised h4{
     margin-top: 20px;
     display: flex;
     margin-bottom: 58px;
+    color: #0068F8;
 
 }
 .vebinar-list{
     border-radius: 5px;
     width: 193px;
     height: 47px;
+}
+.vebinar-section footer{
+    margin-top: 36px;
+}
+.letters{
+    width: 147px;
+}
+.letters.opened .category-list{
+    width: 147.5px;
+    max-height: 458px;
+    overflow: auto;
+    padding-bottom: 15px;
+}
+.speaker-inner-list{
+    gap: 20px 22px;
+}
+.speaker-inner-list .speaker{
+    width: calc(100%/6 - 19px);
+}
+.btn-speakers-more{
+    width: 100px;
+    height: 47px;
+    margin: 36px auto 0;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    font-size: 18px;
+    line-height: 21px;
+}
+.speaker-inner footer{
+    margin-top: 52px;
+}
+.speaker-inner .speaker-vebinars img{
+    width: 16px;
+}
+.speaker-inner .block-title{
+    margin-bottom: 16px;
+}
+.speaker-inner  .event-types{
+    margin-left: 38px;
+}
+.speaker-inner .events-sorting{
+    padding-left: 1px;
+}
+::-webkit-scrollbar {
+    width: 7px;
+    height: 161px;
+
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: transparent;
+    width: 30px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background:#DEE5EB;
+    width: 7px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #DEE5EB;
+    width: 7px;
+}
+.vebinar-right .filter-tag{
+    color: #8BA0B4;
+    border-color: #8BA0B4 ;
+    border-radius: 5px;
 }

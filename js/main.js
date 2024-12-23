@@ -107,7 +107,7 @@ $(function (){
 
     })
     $('.category-select').on('click', function (){
-        $('.category').toggleClass('opened')
+        $(this).parent('.category').toggleClass('opened')
     })
     $('.select-item .closed').on('click', function (){
         $(this).siblings('.category-sub-select').toggleClass('opened')
