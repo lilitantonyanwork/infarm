@@ -63,14 +63,15 @@ $(function (){
             items: 1,
             dots:true,
         });
-        $('.vebinar-speakers').owlCarousel({
-            loop:true,
-            items: 1,
-            dots:true,
-            nav:true,
-        });
+
 
     }
+    $('.vebinar-speakers').owlCarousel({
+        loop:true,
+        items: 1,
+        dots:true,
+        nav:true,
+    });
     function stopCarousel() {
         var owl = $('.owl-carousel');
         owl.trigger('destroy.owl.carousel');
@@ -79,6 +80,12 @@ $(function (){
 
     if ( $(window).width() < 601 ) {
         stopCarousel();
+        $('.vebinar-speakers').owlCarousel({
+            loop:true,
+            items: 1,
+            dots:true,
+            nav:true,
+        });
     } else {
         startCarousel();
     }
@@ -86,6 +93,12 @@ $(function (){
     $(window).resize(function() {
         if ( $(window).width() < 601 ) {
             stopCarousel();
+            $('.vebinar-speakers').owlCarousel({
+                loop:true,
+                items: 1,
+                dots:true,
+                nav:true,
+            });
         } else {
             startCarousel();
         }
