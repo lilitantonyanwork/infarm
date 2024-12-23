@@ -1158,6 +1158,8 @@ header .user-authorised h4{
     border-bottom-left-radius: 16px;
     border-bottom-right-radius: 16px;
     padding-bottom: 10px;
+    max-height: 670px;
+    overflow: auto;
 }
 .category.opened{
     height: 100%;
