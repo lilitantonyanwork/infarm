@@ -1645,4 +1645,10 @@
     .vebinar-text{
         margin-top: 20px;
     }
+    .vebinar-right .owl-dots{
+        bottom: 50px;
+    }
+    .vebinar-right .owl-carousel .owl-nav .owl-next {
+        bottom: 20px;
+    }
 }
